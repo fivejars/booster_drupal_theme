@@ -1,0 +1,7 @@
+{
+    "name": "fivejars/drupal_starterkit_theme",
+    "description": "Theme for FiveJars StarterKit distribution.",
+    "version": "dev-main",
+    "type": "drupal-theme",
+    "license": "GPL-2.0-or-later"
+}
