@@ -1,16 +1,13 @@
 name: drupal_starterkit_theme
 screenshot: screenshot.png
-'alt text': 'radix_starterkit theme screenshot'
 core_version_requirement: ^10
 engine: twig
 type: theme
-'base theme': radix
-starterkit: true
+base theme: radix
 dependencies:
   - 'drupal:sdc'
   - 'drupal:serialization'
-'interface translation project': drupal_starterkit_theme
-'interface translation server pattern': themes/custom/drupal_starterkit_theme/translations/%language.po
+
 regions:
   navbar_branding: 'Navbar branding'
   navbar_left: 'Navbar left'
@@ -23,7 +20,3 @@ libraries:
   - drupal_starterkit_theme/style
 ckeditor5-stylesheets:
   - build/css/main.style.css
-version: 6.0.0-beta13
-project: radix
-datestamp: 1712137757
-generator: 'radix_starterkit:6.0.0-beta13'
