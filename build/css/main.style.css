@@ -12285,4 +12285,90 @@ textarea.form-control-lg {
   padding-left: 0;
 }
 
+.block.block-inline-blockbanner {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  padding: 10px;
+}
+.block.block-inline-blockbanner .block__title {
+  position: relative;
+  z-index: 1;
+  margin-top: 100px;
+  text-align: center;
+}
+.block.block-inline-blockbanner .block__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.block.block-inline-blockbanner .block__content .field__item {
+  z-index: 1;
+}
+.block.block-inline-blockbanner .block__content .field--name-field-description {
+  max-width: 50%;
+}
+.block.block-inline-blockbanner .block__content .field--name-field-cta-links {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.block.block-inline-blockbanner .block__content .field--name-field-media {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.block.block-inline-blockbanner .block__content .field--name-field-media img {
+  width: 100%;
+  height: 100%;
+}
+
+.block.block-inline-blockgallery .block__title {
+  text-align: center;
+}
+.block.block-inline-blockgallery .block__content .field--name-field-medias {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.block.block-inline-blockgallery .block__content .field--name-field-medias > .field__item {
+  min-width: 200px;
+  max-width: 25%;
+  max-height: 200px;
+  flex: 1 1;
+}
+.block.block-inline-blockgallery .block__content .field--name-field-medias > .field__item .media, .block.block-inline-blockgallery .block__content .field--name-field-medias > .field__item .field, .block.block-inline-blockgallery .block__content .field--name-field-medias > .field__item .field__item, .block.block-inline-blockgallery .block__content .field--name-field-medias > .field__item video, .block.block-inline-blockgallery .block__content .field--name-field-medias > .field__item img {
+  height: 100%;
+  width: 100%;
+}
+
+.block.block-inline-blockcarousel .block__title {
+  text-align: center;
+}
+.block.block-inline-blockcarousel .block__content .carousel-inner {
+  height: 600px;
+}
+.block.block-inline-blockcarousel .block__content .carousel-inner .carousel-item {
+  position: relative;
+}
+.block.block-inline-blockcarousel .block__content .carousel-inner .carousel-item .field--name-field-description {
+  position: relative;
+  padding-top: 100px;
+  text-align: center;
+  z-index: 1;
+}
+.block.block-inline-blockcarousel .block__content .carousel-inner .carousel-item .field--name-field-media {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 /*# sourceMappingURL=main.style.css.map*/

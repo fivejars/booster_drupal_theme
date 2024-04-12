@@ -1,0 +1,33 @@
+.block.block-inline-blockcarousel {
+
+  .block__title {
+    text-align: center;
+  }
+
+  .block__content {
+
+    .carousel-inner {
+      height: 600px;
+
+      .carousel-item {
+        position: relative;
+
+        .field--name-field-description {
+          position: relative;
+          padding-top: 100px;
+          text-align: center;
+          z-index: 1;
+        }
+
+        .field--name-field-media {
+          z-index: 0;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+        }
+      }
+    }
+  }
+}
