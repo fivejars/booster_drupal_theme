@@ -8196,6 +8196,45 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./components/banner/_banner.scss":
+/*!****************************************!*\
+  !*** ./components/banner/_banner.scss ***!
+  \****************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./components/carousel/_carousel.scss":
+/*!********************************************!*\
+  !*** ./components/carousel/_carousel.scss ***!
+  \********************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./components/gallery/_gallery.scss":
+/*!******************************************!*\
+  !*** ./components/gallery/_gallery.scss ***!
+  \******************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./components/offcanvas/_offcanvas.scss":
 /*!**********************************************!*\
   !*** ./components/offcanvas/_offcanvas.scss ***!
@@ -8213,7 +8252,7 @@ __webpack_require__.r(__webpack_exports__);
 /************************************************************************/
 /******/ 	// The module cache
 /******/ 	var __webpack_module_cache__ = {};
-/******/
+/******/ 	
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
 /******/ 		// Check if module is in cache
@@ -8227,17 +8266,17 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 			// no module.loaded needed
 /******/ 			exports: {}
 /******/ 		};
-/******/
+/******/ 	
 /******/ 		// Execute the module function
 /******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/
+/******/ 	
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
-/******/
+/******/ 	
 /******/ 	// expose the modules object (__webpack_modules__)
 /******/ 	__webpack_require__.m = __webpack_modules__;
-/******/
+/******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/chunk loaded */
 /******/ 	!function() {
@@ -8272,7 +8311,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 			return result;
 /******/ 		};
 /******/ 	}();
-/******/
+/******/ 	
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	!function() {
 /******/ 		// getDefaultExport function for compatibility with non-harmony modules
@@ -8284,7 +8323,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 			return getter;
 /******/ 		};
 /******/ 	}();
-/******/
+/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	!function() {
 /******/ 		// define getter functions for harmony exports
@@ -8296,12 +8335,12 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 			}
 /******/ 		};
 /******/ 	}();
-/******/
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	!function() {
 /******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
 /******/ 	}();
-/******/
+/******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	!function() {
 /******/ 		// define __esModule on exports
@@ -8312,32 +8351,35 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
 /******/ 	}();
-/******/
+/******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */
 /******/ 	!function() {
 /******/ 		// no baseURI
-/******/
+/******/ 		
 /******/ 		// object to store loaded and loading chunks
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
 /******/ 			"/build/js/main.script": 0,
 /******/ 			"components/offcanvas/_offcanvas": 0,
+/******/ 			"components/gallery/_gallery": 0,
+/******/ 			"components/carousel/_carousel": 0,
+/******/ 			"components/banner/_banner": 0,
 /******/ 			"build/css/main.style": 0
 /******/ 		};
-/******/
+/******/ 		
 /******/ 		// no chunk on demand loading
-/******/
+/******/ 		
 /******/ 		// no prefetching
-/******/
+/******/ 		
 /******/ 		// no preloaded
-/******/
+/******/ 		
 /******/ 		// no HMR
-/******/
+/******/ 		
 /******/ 		// no HMR manifest
-/******/
+/******/ 		
 /******/ 		__webpack_require__.O.j = function(chunkId) { return installedChunks[chunkId] === 0; };
-/******/
+/******/ 		
 /******/ 		// install a JSONP callback for chunk loading
 /******/ 		var webpackJsonpCallback = function(parentChunkLoadingFunction, data) {
 /******/ 			var chunkIds = data[0];
@@ -8364,22 +8406,25 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 			}
 /******/ 			return __webpack_require__.O(result);
 /******/ 		}
-/******/
+/******/ 		
 /******/ 		var chunkLoadingGlobal = self["webpackChunkdrupal_starterkit_theme"] = self["webpackChunkdrupal_starterkit_theme"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 	}();
-/******/
+/******/ 	
 /************************************************************************/
-/******/
+/******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["components/offcanvas/_offcanvas","build/css/main.style"], function() { return __webpack_require__("./src/js/main.script.js"); })
-/******/ 	__webpack_require__.O(undefined, ["components/offcanvas/_offcanvas","build/css/main.style"], function() { return __webpack_require__("./src/scss/main.style.scss"); })
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["components/offcanvas/_offcanvas","build/css/main.style"], function() { return __webpack_require__("./components/offcanvas/_offcanvas.scss"); })
+/******/ 	__webpack_require__.O(undefined, ["components/offcanvas/_offcanvas","components/gallery/_gallery","components/carousel/_carousel","components/banner/_banner","build/css/main.style"], function() { return __webpack_require__("./src/js/main.script.js"); })
+/******/ 	__webpack_require__.O(undefined, ["components/offcanvas/_offcanvas","components/gallery/_gallery","components/carousel/_carousel","components/banner/_banner","build/css/main.style"], function() { return __webpack_require__("./src/scss/main.style.scss"); })
+/******/ 	__webpack_require__.O(undefined, ["components/offcanvas/_offcanvas","components/gallery/_gallery","components/carousel/_carousel","components/banner/_banner","build/css/main.style"], function() { return __webpack_require__("./components/banner/_banner.scss"); })
+/******/ 	__webpack_require__.O(undefined, ["components/offcanvas/_offcanvas","components/gallery/_gallery","components/carousel/_carousel","components/banner/_banner","build/css/main.style"], function() { return __webpack_require__("./components/carousel/_carousel.scss"); })
+/******/ 	__webpack_require__.O(undefined, ["components/offcanvas/_offcanvas","components/gallery/_gallery","components/carousel/_carousel","components/banner/_banner","build/css/main.style"], function() { return __webpack_require__("./components/gallery/_gallery.scss"); })
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["components/offcanvas/_offcanvas","components/gallery/_gallery","components/carousel/_carousel","components/banner/_banner","build/css/main.style"], function() { return __webpack_require__("./components/offcanvas/_offcanvas.scss"); })
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
-/******/
+/******/ 	
 /******/ })()
 ;
 //# sourceMappingURL=main.script.js.map

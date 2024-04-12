@@ -1,0 +1,42 @@
+.block.block-inline-blockbanner {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  padding: 10px;
+}
+.block.block-inline-blockbanner .block__title {
+  position: relative;
+  z-index: 1;
+  margin-top: 100px;
+  text-align: center;
+}
+.block.block-inline-blockbanner .block__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.block.block-inline-blockbanner .block__content .field__item {
+  z-index: 1;
+}
+.block.block-inline-blockbanner .block__content .field--name-field-description {
+  max-width: 50%;
+}
+.block.block-inline-blockbanner .block__content .field--name-field-cta-links {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.block.block-inline-blockbanner .block__content .field--name-field-media {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.block.block-inline-blockbanner .block__content .field--name-field-media img {
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=_banner.css.map*/

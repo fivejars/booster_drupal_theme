@@ -1,0 +1,29 @@
+.block.block-inline-blockgallery {
+
+  .block__title {
+    text-align: center;
+  }
+
+  .block__content {
+    .field--name-field-medias {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      gap: 20px;
+      flex-wrap: wrap;
+
+      & > .field__item {
+        min-width: 200px;
+        max-width: 25%;
+        max-height: 200px;
+        flex: 1 1;
+
+        .media, .field, .field__item, video , img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+
+  }
+}
