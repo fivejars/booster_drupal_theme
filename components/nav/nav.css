@@ -1,0 +1,15 @@
+.nav.footer {
+  display: block;
+  -webkit-columns: 3;
+     -moz-columns: 3;
+          columns: 3;
+}
+@media (max-width: 767.98px) {
+  .nav.footer {
+    -webkit-columns: 2;
+       -moz-columns: 2;
+            columns: 2;
+  }
+}
+
+/*# sourceMappingURL=nav.css.map*/

@@ -1,26 +1,35 @@
-.block.block-inline-blockgallery {
+@import "~bootstrap/scss/_functions";
+@import "~bootstrap/scss/_variables";
+@import "~bootstrap/scss/_mixins";
 
+.block.block-inline-blockgallery {
   .block__title {
     text-align: center;
   }
 
   .block__content {
     .field--name-field-medias {
-      display: flex;
+      display: grid;
       width: 100%;
-      flex-direction: row;
       gap: 20px;
-      flex-wrap: wrap;
+      grid-template-columns: repeat(4, 1fr);
+
+      @include media-breakpoint-down(lg) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      @include media-breakpoint-down(md) {
+        grid-template-columns: repeat(2, 1fr);
+      }
 
       & > .field__item {
-        min-width: 200px;
-        max-width: 25%;
-        max-height: 200px;
-        flex: 1 1;
-
-        .media, .field, .field__item, video , img {
+        .media, .field, .field__item, video, img {
           height: 100%;
           width: 100%;
+        }
+
+        img {
+          object-fit: cover;
         }
       }
     }

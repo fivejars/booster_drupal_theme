@@ -1,0 +1,34 @@
+{#
+/**
+ * @file
+ * Template for a Page Footer component.
+ *
+#}
+{% set footer_attributes = footer_attributes ?: create_attribute() %}
+{% set footer_utility_classes = footer_utility_classes ? footer_utility_classes : [] %}
+
+{% set footer_classes = [
+  'page__footer',
+  'bg-primary-subtle',
+]|merge(footer_utility_classes) %}
+
+{% if page.footer %}
+  <footer {{ footer_attributes.addClass(footer_classes) }}>
+    <div class="container">
+      <div
+        class="d-flex flex-row justify-content-center justify-content-md-between flex-wrap flex-md-nowrap align-items-md-center pt-5 pb-4">
+        {% block page_inner_footer %}
+          {{ page.footer|without('drupal_starterkit_theme_copyrightblock') }}
+        {% endblock %}
+      </div>
+    </div>
+    <div class="border-top border-dark">
+      <div class="container">
+        <div class="d-flex flex-row justify-content-center align-items-center pt-3">
+          {{ page.footer.drupal_starterkit_theme_copyrightblock }}
+        </div>
+      </div>
+    </div>
+  </footer>
+{% endif %}
+

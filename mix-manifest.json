@@ -1,8 +1,12 @@
 {
     "/build/js/main.script.js": "/build/js/main.script.js",
-    "/components/offcanvas/_offcanvas.css": "/components/offcanvas/_offcanvas.css",
     "/components/gallery/_gallery.css": "/components/gallery/_gallery.css",
     "/components/carousel/_carousel.css": "/components/carousel/_carousel.css",
+    "/components/basic_block/_basic_block.css": "/components/basic_block/_basic_block.css",
     "/components/banner/_banner.css": "/components/banner/_banner.css",
-    "/build/css/main.style.css": "/build/css/main.style.css"
+    "/build/css/main.style.css": "/build/css/main.style.css",
+    "/components/page/page.css": "/components/page/page.css",
+    "/components/page-footer/page-footer.css": "/components/page-footer/page-footer.css",
+    "/components/offcanvas/_offcanvas.css": "/components/offcanvas/_offcanvas.css",
+    "/components/nav/nav.css": "/components/nav/nav.css"
 }
