@@ -58,7 +58,7 @@
   {% block block_content %}
     {% if content %}
       {% set id_carousel = 'carousel-' ~ configuration['block_revision_id']%}
-      <div id={{ id_carousel}} {{ content_attributes.addClass('block__content carousel slide') }}>
+      <div id={{ id_carousel}} {{ content_attributes.addClass('block__content carousel slide carousel-fade') }} data-bs-ride="carousel"  data-interval="3000">
         <div class="carousel-inner">
           {% for slide in slides %}
               <div class="carousel-item {{ loop.first ? 'active' : '' }}">

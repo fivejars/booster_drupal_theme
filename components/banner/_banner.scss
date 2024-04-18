@@ -1,7 +1,12 @@
+@import "~bootstrap/scss/_functions";
+@import "~bootstrap/scss/_variables";
+@import "~bootstrap/scss/_mixins";
+
+
 .block.block-inline-blockbanner {
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 700px;
   padding: 10px;
 
   .block__title {
@@ -22,6 +27,10 @@
 
     .field--name-field-description {
       max-width: 50%;
+
+      @include media-breakpoint-down(md) {
+        max-width: 90%;
+      }
     }
 
     .field--name-field-cta-links {

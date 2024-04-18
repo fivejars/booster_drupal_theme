@@ -1,0 +1,1 @@
+{"version":3,"file":"components/page-footer/page-footer.css","mappings":"AAEA;EACE;AADF,C","sources":["webpack://drupal_starterkit_theme/./components/page-footer/page-footer.scss"],"sourcesContent":["@import \"../../src/scss/init\";\n\n.page__footer {\n  background: var(--bs-secondary-bg-subtle);\n}\n"],"names":[],"sourceRoot":""}

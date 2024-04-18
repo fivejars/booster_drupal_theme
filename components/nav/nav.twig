@@ -1,0 +1,70 @@
+{#
+/**
+ * @file
+ * Theme override for a Nav component.
+ *
+ * Available config:
+ * - alignment: left | right | center | vertical.
+ * - style: tabs | pills
+ * - fill: fill | justify
+ * - nav_utility_classes: An array of utility classes.
+ */
+#}
+
+{% set nav_utility_classes = nav_utility_classes ? nav_utility_classes : [] %}
+
+{% import _self as menus %}
+
+{% set alignment_classes = {
+  'right': 'justify-content-end',
+  'center': 'justify-content-center',
+  'vertical': 'flex-column',
+  'left': ''
+} %}
+
+{% set alignment = alignment_classes[alignment] ?? '' %}
+
+{% set style = style ? 'nav-' ~ style : '' %}
+{% set fill = fill ? 'nav-' ~ fill : '' %}
+
+{%
+  set nav_classes = [
+    'nav',
+    menu_name,
+    style,
+    alignment,
+    fill
+  ]|merge(nav_utility_classes)
+%}
+
+{% if items %}
+  <ul{{ attributes.addClass(nav_classes) }}>
+    {% block nav_items %}
+      {% for item in items %}
+        {% set nav_item_classes = [
+          'nav-item',
+          item.in_active_trail ? 'active' : '',
+          item.is_expanded and item.below ? 'dropdown' : ''
+        ] %}
+        {% set nav_link_classes = ['nav-link'] %}
+        {% if item.url.options.attributes.class is iterable %}
+          {% set nav_link_classes = nav_link_classes|merge(item.url.options.attributes.class) %}
+        {% elseif item.url.options.attributes.class %}
+          {% set nav_link_classes = nav_link_classes|merge([item.url.options.attributes.class]) %}
+        {% endif %}
+        <li class="{{ nav_item_classes|join(' ') }}">
+          {% if item.is_expanded and item.below %}
+            <a href="{{ item.url }}" class="{{ nav_link_classes|merge(['dropdown-toggle'])|join(' ') }}" data-bs-toggle="dropdown">{{ item.title }}</a>
+            {% if item.below %}
+              {% include 'radix:dropdown-menu' with {
+                items: item.below
+              } %}
+            {% endif %}
+          {% else %}
+            {{ link(item.title, item.url, { 'class': nav_link_classes }) }}
+          {% endif %}
+        </li>
+      {% endfor %}
+    {% endblock %}
+  </ul>
+{% endif %}
