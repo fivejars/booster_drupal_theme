@@ -1,0 +1,14 @@
+.block.block-inline-blockvideo .media .field__item {
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+.block.block-inline-blockvideo .media .field__item .media-oembed-content, .block.block-inline-blockvideo .media .field__item video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=_video.css.map*/

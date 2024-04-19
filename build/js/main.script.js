@@ -8235,6 +8235,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./components/video/_video.scss":
+/*!**************************************!*\
+  !*** ./components/video/_video.scss ***!
+  \**************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./src/scss/main.style.scss":
 /*!**********************************!*\
   !*** ./src/scss/main.style.scss ***!
@@ -8418,6 +8431,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 			"components/basic_block/_basic_block": 0,
 /******/ 			"components/banner/_banner": 0,
 /******/ 			"build/css/main.style": 0,
+/******/ 			"components/video/_video": 0,
 /******/ 			"components/page/page": 0,
 /******/ 			"components/page-footer/page-footer": 0,
 /******/ 			"components/offcanvas/_offcanvas": 0,
@@ -8473,16 +8487,17 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["components/gallery/_gallery","components/carousel/_carousel","components/basic_block/_basic_block","components/banner/_banner","build/css/main.style","components/page/page","components/page-footer/page-footer","components/offcanvas/_offcanvas","components/nav/nav"], function() { return __webpack_require__("./src/js/main.script.js"); })
-/******/ 	__webpack_require__.O(undefined, ["components/gallery/_gallery","components/carousel/_carousel","components/basic_block/_basic_block","components/banner/_banner","build/css/main.style","components/page/page","components/page-footer/page-footer","components/offcanvas/_offcanvas","components/nav/nav"], function() { return __webpack_require__("./src/scss/main.style.scss"); })
-/******/ 	__webpack_require__.O(undefined, ["components/gallery/_gallery","components/carousel/_carousel","components/basic_block/_basic_block","components/banner/_banner","build/css/main.style","components/page/page","components/page-footer/page-footer","components/offcanvas/_offcanvas","components/nav/nav"], function() { return __webpack_require__("./components/banner/_banner.scss"); })
-/******/ 	__webpack_require__.O(undefined, ["components/gallery/_gallery","components/carousel/_carousel","components/basic_block/_basic_block","components/banner/_banner","build/css/main.style","components/page/page","components/page-footer/page-footer","components/offcanvas/_offcanvas","components/nav/nav"], function() { return __webpack_require__("./components/basic_block/_basic_block.scss"); })
-/******/ 	__webpack_require__.O(undefined, ["components/gallery/_gallery","components/carousel/_carousel","components/basic_block/_basic_block","components/banner/_banner","build/css/main.style","components/page/page","components/page-footer/page-footer","components/offcanvas/_offcanvas","components/nav/nav"], function() { return __webpack_require__("./components/carousel/_carousel.scss"); })
-/******/ 	__webpack_require__.O(undefined, ["components/gallery/_gallery","components/carousel/_carousel","components/basic_block/_basic_block","components/banner/_banner","build/css/main.style","components/page/page","components/page-footer/page-footer","components/offcanvas/_offcanvas","components/nav/nav"], function() { return __webpack_require__("./components/gallery/_gallery.scss"); })
-/******/ 	__webpack_require__.O(undefined, ["components/gallery/_gallery","components/carousel/_carousel","components/basic_block/_basic_block","components/banner/_banner","build/css/main.style","components/page/page","components/page-footer/page-footer","components/offcanvas/_offcanvas","components/nav/nav"], function() { return __webpack_require__("./components/nav/nav.scss"); })
-/******/ 	__webpack_require__.O(undefined, ["components/gallery/_gallery","components/carousel/_carousel","components/basic_block/_basic_block","components/banner/_banner","build/css/main.style","components/page/page","components/page-footer/page-footer","components/offcanvas/_offcanvas","components/nav/nav"], function() { return __webpack_require__("./components/offcanvas/_offcanvas.scss"); })
-/******/ 	__webpack_require__.O(undefined, ["components/gallery/_gallery","components/carousel/_carousel","components/basic_block/_basic_block","components/banner/_banner","build/css/main.style","components/page/page","components/page-footer/page-footer","components/offcanvas/_offcanvas","components/nav/nav"], function() { return __webpack_require__("./components/page-footer/page-footer.scss"); })
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["components/gallery/_gallery","components/carousel/_carousel","components/basic_block/_basic_block","components/banner/_banner","build/css/main.style","components/page/page","components/page-footer/page-footer","components/offcanvas/_offcanvas","components/nav/nav"], function() { return __webpack_require__("./components/page/page.scss"); })
+/******/ 	__webpack_require__.O(undefined, ["components/gallery/_gallery","components/carousel/_carousel","components/basic_block/_basic_block","components/banner/_banner","build/css/main.style","components/video/_video","components/page/page","components/page-footer/page-footer","components/offcanvas/_offcanvas","components/nav/nav"], function() { return __webpack_require__("./src/js/main.script.js"); })
+/******/ 	__webpack_require__.O(undefined, ["components/gallery/_gallery","components/carousel/_carousel","components/basic_block/_basic_block","components/banner/_banner","build/css/main.style","components/video/_video","components/page/page","components/page-footer/page-footer","components/offcanvas/_offcanvas","components/nav/nav"], function() { return __webpack_require__("./src/scss/main.style.scss"); })
+/******/ 	__webpack_require__.O(undefined, ["components/gallery/_gallery","components/carousel/_carousel","components/basic_block/_basic_block","components/banner/_banner","build/css/main.style","components/video/_video","components/page/page","components/page-footer/page-footer","components/offcanvas/_offcanvas","components/nav/nav"], function() { return __webpack_require__("./components/banner/_banner.scss"); })
+/******/ 	__webpack_require__.O(undefined, ["components/gallery/_gallery","components/carousel/_carousel","components/basic_block/_basic_block","components/banner/_banner","build/css/main.style","components/video/_video","components/page/page","components/page-footer/page-footer","components/offcanvas/_offcanvas","components/nav/nav"], function() { return __webpack_require__("./components/basic_block/_basic_block.scss"); })
+/******/ 	__webpack_require__.O(undefined, ["components/gallery/_gallery","components/carousel/_carousel","components/basic_block/_basic_block","components/banner/_banner","build/css/main.style","components/video/_video","components/page/page","components/page-footer/page-footer","components/offcanvas/_offcanvas","components/nav/nav"], function() { return __webpack_require__("./components/carousel/_carousel.scss"); })
+/******/ 	__webpack_require__.O(undefined, ["components/gallery/_gallery","components/carousel/_carousel","components/basic_block/_basic_block","components/banner/_banner","build/css/main.style","components/video/_video","components/page/page","components/page-footer/page-footer","components/offcanvas/_offcanvas","components/nav/nav"], function() { return __webpack_require__("./components/gallery/_gallery.scss"); })
+/******/ 	__webpack_require__.O(undefined, ["components/gallery/_gallery","components/carousel/_carousel","components/basic_block/_basic_block","components/banner/_banner","build/css/main.style","components/video/_video","components/page/page","components/page-footer/page-footer","components/offcanvas/_offcanvas","components/nav/nav"], function() { return __webpack_require__("./components/nav/nav.scss"); })
+/******/ 	__webpack_require__.O(undefined, ["components/gallery/_gallery","components/carousel/_carousel","components/basic_block/_basic_block","components/banner/_banner","build/css/main.style","components/video/_video","components/page/page","components/page-footer/page-footer","components/offcanvas/_offcanvas","components/nav/nav"], function() { return __webpack_require__("./components/offcanvas/_offcanvas.scss"); })
+/******/ 	__webpack_require__.O(undefined, ["components/gallery/_gallery","components/carousel/_carousel","components/basic_block/_basic_block","components/banner/_banner","build/css/main.style","components/video/_video","components/page/page","components/page-footer/page-footer","components/offcanvas/_offcanvas","components/nav/nav"], function() { return __webpack_require__("./components/page-footer/page-footer.scss"); })
+/******/ 	__webpack_require__.O(undefined, ["components/gallery/_gallery","components/carousel/_carousel","components/basic_block/_basic_block","components/banner/_banner","build/css/main.style","components/video/_video","components/page/page","components/page-footer/page-footer","components/offcanvas/_offcanvas","components/nav/nav"], function() { return __webpack_require__("./components/page/page.scss"); })
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["components/gallery/_gallery","components/carousel/_carousel","components/basic_block/_basic_block","components/banner/_banner","build/css/main.style","components/video/_video","components/page/page","components/page-footer/page-footer","components/offcanvas/_offcanvas","components/nav/nav"], function() { return __webpack_require__("./components/video/_video.scss"); })
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
