@@ -1,29 +1,3 @@
-.block.block-inline-blockgallery .block__title {
-  text-align: center;
-}
-.block.block-inline-blockgallery .block__content .field--name-field-medias {
-  display: grid;
-  width: 100%;
-  gap: 20px;
-  grid-template-columns: repeat(4, 1fr);
-}
-@media (max-width: 991.98px) {
-  .block.block-inline-blockgallery .block__content .field--name-field-medias {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media (max-width: 767.98px) {
-  .block.block-inline-blockgallery .block__content .field--name-field-medias {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-.block.block-inline-blockgallery .block__content .field--name-field-medias > .field__item .media, .block.block-inline-blockgallery .block__content .field--name-field-medias > .field__item .field, .block.block-inline-blockgallery .block__content .field--name-field-medias > .field__item .field__item, .block.block-inline-blockgallery .block__content .field--name-field-medias > .field__item video, .block.block-inline-blockgallery .block__content .field--name-field-medias > .field__item img {
-  height: 100%;
-  width: 100%;
-}
-.block.block-inline-blockgallery .block__content .field--name-field-medias > .field__item img {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
+.block.block-inline-blockgallery .block__title{text-align:center}.block.block-inline-blockgallery .block__content .field--name-field-medias{display:grid;gap:20px;grid-template-columns:repeat(4,1fr);width:100%}@media (max-width:991.98px){.block.block-inline-blockgallery .block__content .field--name-field-medias{grid-template-columns:repeat(3,1fr)}}@media (max-width:767.98px){.block.block-inline-blockgallery .block__content .field--name-field-medias{grid-template-columns:repeat(2,1fr)}}.block.block-inline-blockgallery .block__content .field--name-field-medias>.field__item .field,.block.block-inline-blockgallery .block__content .field--name-field-medias>.field__item .field__item,.block.block-inline-blockgallery .block__content .field--name-field-medias>.field__item .media,.block.block-inline-blockgallery .block__content .field--name-field-medias>.field__item img,.block.block-inline-blockgallery .block__content .field--name-field-medias>.field__item video{height:100%;width:100%}.block.block-inline-blockgallery .block__content .field--name-field-medias>.field__item img{-o-object-fit:cover;object-fit:cover}
 
 /*# sourceMappingURL=_gallery.css.map*/
