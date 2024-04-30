@@ -6,9 +6,9 @@ dependencies:
   module:
     - system
   theme:
-    - drupal_starterkit_theme
-id: drupal_starterkit_theme_footer
-theme: drupal_starterkit_theme
+    - booster_theme
+id: booster_theme_footer
+theme: booster_theme
 region: footer
 weight: -5
 provider: null

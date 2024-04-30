@@ -1,5 +1,5 @@
-name: drupal_starterkit_theme
-screenshot: screenshot.png
+name: 'Booster theme'
+screenshot: screenshot.jpeg
 core_version_requirement: ^10
 engine: twig
 type: theme
@@ -17,6 +17,6 @@ regions:
   page_bottom: 'Page bottom'
   footer: Footer
 libraries:
-  - drupal_starterkit_theme/style
+  - booster_theme/style
 ckeditor5-stylesheets:
   - build/css/main.style.css

@@ -1,7 +1,7 @@
 {
-    "name": "fivejars/drupal_starterkit_theme",
-    "description": "Theme for FiveJars StarterKit distribution.",
-    "version": "dev-main",
+    "name": "fivejars/booster_drupal_theme",
+    "description": "Theme for Booster Drupal distribution.",
+    "version": "1.x-dev",
     "type": "drupal-theme",
     "license": "GPL-2.0-or-later",
     "require": {
@@ -15,6 +15,7 @@
     },
     "extra": {
         "enable-patching": true,
+        "installer-name": "booster_theme",
         "patches": {
             "drupal/radix": {
                 "Issue #3439449: Drupal\\sdc\\Exception\\InvalidComponentException: [type] NULL value found, but a string or an object is required. (status message)": "https://www.drupal.org/files/issues/2024-04-15/3439449__4.patch"

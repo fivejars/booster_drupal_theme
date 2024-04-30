@@ -4,9 +4,9 @@ dependencies:
   module:
     - addtoany
   theme:
-    - drupal_starterkit_theme
-id: drupal_starterkit_theme_addtoanysharebuttons
-theme: drupal_starterkit_theme
+    - booster_theme
+id: booster_theme_share_buttons
+theme: booster_theme
 region: footer
 weight: 0
 provider: null

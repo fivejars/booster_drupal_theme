@@ -2,9 +2,9 @@ langcode: en
 status: true
 dependencies:
   theme:
-    - drupal_starterkit_theme
-id: drupal_starterkit_theme_tabs
-theme: drupal_starterkit_theme
+    - booster_theme
+id: booster_theme_tabs
+theme: booster_theme
 region: header
 weight: 0
 provider: null

@@ -1,13 +1,15 @@
-# Ignore SASS files
+# Ignore generated files
 /.sass-cache
 .DS_Store
 *.codekit
 .idea
 .vscode
 node_modules
+build
+components/*/*.css
+components/*/*.map
+mix-manifest.json
 
-# local env files
+# Local env files
 .env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.env.*.local

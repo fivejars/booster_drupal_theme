@@ -1,6 +1,6 @@
 {
-	"name": "drupal_starterkit_theme",
-	"description": "My custom Radix subtheme",
+	"name": "booster_theme",
+	"description": "Booster theme",
 	"private": true,
 	"engines": {
 		"npm": ">=6.0",

@@ -4,9 +4,9 @@ dependencies:
   module:
     - system
   theme:
-    - drupal_starterkit_theme
-id: drupal_starterkit_theme_content
-theme: drupal_starterkit_theme
+    - booster_theme
+id: booster_theme_content
+theme: booster_theme
 region: content
 weight: -5
 provider: null

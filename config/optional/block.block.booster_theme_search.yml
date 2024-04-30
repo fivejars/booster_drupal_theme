@@ -7,9 +7,9 @@ dependencies:
     - system
     - views
   theme:
-    - drupal_starterkit_theme
-id: drupal_starterkit_theme_exposedformsearchpage
-theme: drupal_starterkit_theme
+    - booster_theme
+id: booster_theme_search
+theme: booster_theme
 region: navbar_right
 weight: -5
 provider: null

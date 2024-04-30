@@ -18,15 +18,15 @@
       <div
         class="d-flex flex-row justify-content-center justify-content-md-between flex-wrap flex-md-nowrap align-items-md-center pt-5 pb-4">
         {% block page_inner_footer %}
-          {{ page.footer|without('drupal_starterkit_theme_copyrightblock') }}
+          {{ page.footer|without('booster_theme_copyrightblock') }}
         {% endblock %}
       </div>
     </div>
-    {% if page.footer.drupal_starterkit_theme_copyrightblock %}
+    {% if page.footer.booster_theme_copyright %}
       <div class="border-top border-dark">
         <div class="container">
           <div class="d-flex flex-row justify-content-center align-items-center pt-3">
-            {{ page.footer.drupal_starterkit_theme_copyrightblock }}
+            {{ page.footer.booster_theme_copyright }}
           </div>
         </div>
       </div>

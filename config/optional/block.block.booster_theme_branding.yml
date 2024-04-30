@@ -4,9 +4,9 @@ dependencies:
   module:
     - system
   theme:
-    - drupal_starterkit_theme
-id: drupal_starterkit_theme_branding
-theme: drupal_starterkit_theme
+    - booster_theme
+id: booster_theme_branding
+theme: booster_theme
 region: navbar_branding
 weight: -1
 provider: null
