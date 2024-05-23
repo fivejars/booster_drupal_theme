@@ -6,7 +6,8 @@
     "license": "GPL-2.0-or-later",
     "require": {
         "cweagans/composer-patches": "^1.5.0",
-        "drupal/radix": "6.0.0-beta13"
+        "drupal/radix": "6.0.0-beta13",
+        "drupal/storybook": "^1.0@beta"
     },
     "config": {
         "allow-plugins": {
@@ -19,6 +20,12 @@
         "patches": {
             "drupal/radix": {
                 "Issue #3439449: Drupal\\sdc\\Exception\\InvalidComponentException: [type] NULL value found, but a string or an object is required. (status message)": "https://www.drupal.org/files/issues/2024-04-15/3439449__4.patch"
+            },
+            "drupal/storybook": {
+                "Issue #3424336: Allow the server url to be set as a global parameter": "https://git.drupalcode.org/project/storybook/-/merge_requests/6.patch"
+            },
+            "e0ipso/twig-storybook": {
+                "Feature allow global server url": "https://github.com/e0ipso/twig-storybook/pull/11.patch"
             }
         }
     }

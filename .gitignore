@@ -10,6 +10,9 @@ components/*/*.css
 components/*/*.map
 mix-manifest.json
 
+# Storybook json's
+**/*.stories.json
+
 # Local env files
 .env.local
 .env.*.local

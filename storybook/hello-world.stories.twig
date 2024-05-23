@@ -1,0 +1,30 @@
+{# themes/contrib/booster_theme/storybook/hello-world.stories.twig #}
+{% stories hello_world with { title: 'Booster/Custom/Example' } %}
+
+  {% story simple_html with {
+    name: '1. Simple HTML'
+  } %}
+    <h2>This is an example</h2>
+    <ul>
+      <li>This is some demo content</li>
+    </ul>
+  {% endstory %}
+
+  {% story using_args with {
+    name: '2. Using Args',
+    args: {
+      header: 'A dynamic example',
+      items: [{name: 'Foo', value: 'Bar'}]
+    }
+  } %}
+    <h2>{{ header }}</h2>
+    <p>Authoring stories using JSON will not allow you to leverage the dynamic features from a template language. This
+      is one of the reasons to use Twig to write your stories.</p>
+    <ul>
+      {% for item in items %}
+        <li>This is some demo content. ({{ item.name }} - {{ item.value }}).</li>
+      {% endfor %}
+    </ul>
+  {% endstory %}
+
+{% endstories %}

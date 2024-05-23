@@ -1,0 +1,219 @@
+{# themes/contrib/booster_theme/components/badge/badge.stories.twig #}
+{% stories badge with {
+  title: "Booster/Components/Badge",
+  description: "Documentation and examples for badges, our small count and labeling component.",
+  argTypes: {
+    "badge_html_tag": {
+      "name": "HTML Tag",
+      "desc": "The HTML tag to use for the bade. Defaults to span.",
+      "defaultValue": "span",
+      "control": "select",
+      "options": {
+        "span": "span",
+        "div": "div",
+        "a": "a"
+      }
+    },
+    "content": {
+      "name": "Content",
+      "description": "The content for the button",
+      "control": "text",
+      "defaultValue": "Button"
+    },
+    "url": {
+      "name": "URL Link",
+      "description": "URL link for Badge when the HTML tag is an anchor link.",
+      "defaultValue": "",
+      "control": "text"
+    }
+  },
+} %}
+
+  {% story Primary with {
+    "name": "Primary",
+    "args": {
+      "badge_html_tag": "span",
+      "color": "primary",
+      "content": "Badge",
+      "url": ""
+    }
+  } %}
+    <div class="component-wrapper" style="display: flex; align-items: center; justify-content: center; min-height: 500px; gap: 10px; background: #ccc;">
+      {% include 'radix:badge' with {
+        badge_html_tag: badge_html_tag,
+        color: color,
+        content: content,
+        url: url
+      } %}
+    </div>
+  {% endstory %}
+
+  {% story Secondary with {
+    "name": "Secondary",
+    "args": {
+      "badge_html_tag": "span",
+      "color": "secondary",
+      "content": "Badge",
+      "url": ""
+    }
+  } %}
+    <div class="component-wrapper" style="display: flex; align-items: center; justify-content: center; min-height: 500px; gap: 10px; background: #ccc;">
+      {% include 'radix:badge' with {
+        badge_html_tag: badge_html_tag,
+        color: color,
+        content: content,
+        url: url
+      } %}
+    </div>
+  {% endstory %}
+
+  {% story Success with {
+    "name": "Success",
+    "args": {
+      "badge_html_tag": "span",
+      "color": "success",
+      "content": "Badge",
+      "url": ""
+    }
+  } %}
+    <div class="component-wrapper" style="display: flex; align-items: center; justify-content: center; min-height: 500px; gap: 10px; background: #ccc;">
+      {% include 'radix:badge' with {
+        badge_html_tag: badge_html_tag,
+        color: color,
+        content: content,
+        url: url
+      } %}
+    </div>
+  {% endstory %}
+
+  {% story Info with {
+    "name": "Info",
+    "args": {
+      "badge_html_tag": "span",
+      "color": "info",
+      "content": "Badge",
+      "url": ""
+    }
+  } %}
+    <div class="component-wrapper" style="display: flex; align-items: center; justify-content: center; min-height: 500px; gap: 10px; background: #ccc;">
+      {% include 'radix:badge' with {
+        badge_html_tag: badge_html_tag,
+        color: color,
+        content: content,
+        url: url
+      } %}
+    </div>
+  {% endstory %}
+
+  {% story Warning with {
+    "name": "Warning",
+    "args": {
+      "badge_html_tag": "span",
+      "color": "warning",
+      "content": "Badge",
+      "url": ""
+    }
+  } %}
+    <div class="component-wrapper" style="display: flex; align-items: center; justify-content: center; min-height: 500px; gap: 10px; background: #ccc;">
+      {% include 'radix:badge' with {
+        badge_html_tag: badge_html_tag,
+        color: color,
+        content: content,
+        url: url
+      } %}
+    </div>
+  {% endstory %}
+
+  {% story Danger with {
+    "name": "Danger",
+    "args": {
+      "badge_html_tag": "span",
+      "color": "danger",
+      "content": "Badge",
+      "url": ""
+    }
+  } %}
+    <div class="component-wrapper" style="display: flex; align-items: center; justify-content: center; min-height: 500px; gap: 10px; background: #ccc;">
+      {% include 'radix:badge' with {
+        badge_html_tag: badge_html_tag,
+        color: color,
+        content: content,
+        url: url
+      } %}
+    </div>
+  {% endstory %}
+
+  {% story Light with {
+    "name": "Light",
+    "args": {
+      "badge_html_tag": "span",
+      "color": "light",
+      "content": "Badge",
+      "url": ""
+    }
+  } %}
+    <div class="component-wrapper" style="display: flex; align-items: center; justify-content: center; min-height: 500px; gap: 10px; background: #ccc;">
+      {% include 'radix:badge' with {
+        badge_html_tag: badge_html_tag,
+        color: color,
+        content: content,
+        url: url
+      } %}
+    </div>
+  {% endstory %}
+
+  {% story Dark with {
+    "name": "Dark",
+    "args": {
+      "badge_html_tag": "span",
+      "color": "dark",
+      "content": "Badge",
+      "url": ""
+    }
+  } %}
+    <div class="component-wrapper" style="display: flex; align-items: center; justify-content: center; min-height: 500px; gap: 10px; background: #ccc;">
+      {% include 'radix:badge' with {
+        badge_html_tag: badge_html_tag,
+        color: color,
+        content: content,
+        url: url
+      } %}
+    </div>
+  {% endstory %}
+
+  {% story Collection with {
+    "name": "Collection",
+    "args": {
+      "badge_html_tag": "span",
+      "content": "Badge",
+      "url": ""
+    }
+  } %}
+
+    {% set colors = [
+      "primary",
+      "secondary",
+      "success",
+      "info",
+      "warning",
+      "danger",
+      "light",
+      "dark"
+    ] %}
+
+    <div class="component-wrapper" style="display: flex; align-items: center; justify-content: center; min-height: 500px; gap: 10px; background: #ccc;">
+      {% for color in colors %}
+        <p>
+          {% include 'radix:badge' with {
+            badge_html_tag: badge_html_tag,
+            color: color,
+            content: content,
+            url: url
+          } %}
+        </p>
+      {% endfor %}
+    </div>
+  {% endstory %}
+
+
+{% endstories %}
