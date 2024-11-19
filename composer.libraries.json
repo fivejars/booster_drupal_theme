@@ -1,0 +1,12 @@
+{
+    "repositories": {
+        "booster_theme_recipe": {
+            "type": "git",
+            "url": "https://github.com/fivejars/booster_recipe_booster_theme_radix_based.git",
+            "only": ["drupal_recipe/booster_theme"]
+        }
+    },
+    "require-dev": {
+        "drupal_recipe/booster_theme": "1.x-dev"
+    }
+}
