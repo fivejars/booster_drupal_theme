@@ -19,6 +19,7 @@
 		"stylint-fix": "npx stylelint '**/*.scss' --fix",
 		"watch-poll": "mix watch -- --watch-options-poll=1000",
 		"hot": "mix watch --hot",
+		"build": "mix --production",
 		"production": "mix --production"
 	},
 	"devDependencies": {
