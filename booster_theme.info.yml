@@ -5,6 +5,7 @@ engine: twig
 type: theme
 base theme: radix
 dependencies:
+  - 'drupal:booster_lb'
   - 'drupal:sdc'
   - 'drupal:serialization'
 
